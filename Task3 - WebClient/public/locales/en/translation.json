@@ -1,0 +1,7 @@
+{
+  "catalog": {
+    "catalog_name": "Catalog",
+    "dish_types_filter": "Dish type",
+    "popularity_filter": "Popularity"
+  }
+}

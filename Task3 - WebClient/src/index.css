@@ -1,0 +1,291 @@
+* {
+  padding: 0;
+  margin: 0;
+  /*border: solid 1px black;*/
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+#header {
+  font-size: 17px;
+  display: flex;
+}
+
+.header-menu {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.auth-form-input {
+  width: 100%;
+}
+
+.auth-form-group {
+  margin-bottom: 12px;
+}
+
+.auth-button {
+  margin-top: 17px;
+  margin-bottom: 5px;
+}
+
+.page-content {
+  margin-left: 75px;
+}
+
+#catalog-wrapper {
+  margin-top: 15px;
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  grid-template-areas: 'l r';
+  grid-gap: 60px;
+}
+
+#filtering-wrapper {
+  grid-area: l;
+  /*background-color: #61dafb;*/
+  height: 100%;
+  margin-left: 25px;
+}
+
+#catalog-content-wrapper {
+  grid-area: r;
+  /*background-color: #70fb61;*/
+  height: 100%;
+  margin-right: 60px;
+}
+
+#filter-slider {
+  width: 250px;
+}
+
+.centrator {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  top: 10px;
+}
+
+#catalog-manager {
+  display: flex;
+  margin: 0 80px;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+}
+
+#catalog-dishes-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.catalog-card {
+  width: 400px;
+  margin: 12px 10px;
+}
+
+.catalog-card img {
+  width: 370px;
+  height: 270px;
+}
+
+.catalog-card-action {
+  margin: 5px 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+#dish-searcher-wrapper {
+  margin-top: 15px;
+  display: grid;
+  grid-template-columns: 400px 1fr;
+  grid-template-areas: 'l r';
+  grid-gap: 60px;
+}
+
+.dish-searcher-navigation {
+  /*grid-area: l;*/
+  /*!*background-color: #61dafb;*!*/
+  /*height: 100%;*/
+  /*margin-left: 25px;*/
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+#dish-searcher-result {
+  grid-area: r;
+  /*background-color: #70fb61;*/
+  height: 100%;
+  margin-right: 60px;
+}
+
+.class-searcher-card {
+  width: 270px;
+  margin: 10px 7px;
+}
+
+#recommendations {
+  margin-left: 20px;
+}
+
+.class-searcher-card img {
+  width: 240px;
+  height: 170px;
+}
+
+.searcher-result-card-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.dish-searcher-navigation-item {
+  margin: 10px 30px;
+}
+
+#missed-ingredients-input {
+  display: flex;
+  flex-direction: column;
+}
+
+.found-dishes-wrapper, #found-catering-establishments {
+  margin: 10px 15px;
+}
+
+.dish-link-from-catalog:link, .link-wrapper:link {
+  text-decoration: none;
+  color: #000000;
+}
+
+#dish-info-wrapper {
+  display: grid;
+  grid-template-columns: 490px 1fr;
+  grid-template-areas: 'l r';
+    grid-gap: 40px;
+}
+
+#dish-main-info {
+  grid-area: l;
+  height: 100%;
+}
+
+#dish-main-info img {
+  width: 490px;
+  height: 350px;
+}
+
+#dish-info-wrapper {
+  margin: 20px 20px;
+}
+
+#dish-additional-info {
+  grid-area: r;
+  height: 100%;
+}
+
+#dish-main-info-header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.title {
+  font-size: 26px;
+}
+
+.subtitle {
+  font-size: 18px;
+  color: #4a4949;
+  margin-bottom: 5px;
+}
+
+.section-title {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.MuiTableHead-root th {
+  font-weight: bold;
+}
+
+#ingredients-section {
+  margin: 12px 0;
+}
+
+#dish-report-container {
+  width: 490px;
+}
+
+.report-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 7px;
+}
+
+#report-send {
+  display: flex;
+  flex-direction: column;
+  margin: 10px 0;
+  align-items: center;
+}
+
+#new-report-text {
+  width: 465px;
+}
+
+#send_report-button {
+  margin-top: 5px;
+}
+
+#found-catering-establishments-message,
+#appropriate-dishes-message,
+#almost-appropriate-dishes-message {
+  margin-left: 5px;
+  font-size: 17px;
+}
+
+#admin-control-buttons {
+  margin: 20px 0;
+  display: flex;
+  justify-content: space-around;
+}
+
+.entity-dialog-field {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.entity-dialog-item {
+  margin: 10px 0;
+}
+
+.entity-dialog-input {
+  width: 320px;
+}
+
+.centered {
+  margin-top: 5px;
+  display: flex;
+  justify-content: center;
+}

@@ -1,0 +1,1626 @@
+/usr/local/lib/python3.9/site-packages/rest_framework/schemas/openapi.py:49: UserWarning: You have a duplicated operationId in your OpenAPI schema: listAutomaticMachineTypes
+	Route: /api/automatic_machine_type/, Method: get
+	Route: /api/catering_establishment_automatic_machine/, Method: get
+	An operationId has to be unique across your schema. Your schema may not work in other tools.
+  warnings.warn(
+/usr/local/lib/python3.9/site-packages/rest_framework/schemas/openapi.py:49: UserWarning: You have a duplicated operationId in your OpenAPI schema: createAutomaticMachineType
+	Route: /api/automatic_machine_type/, Method: post
+	Route: /api/catering_establishment_automatic_machine/, Method: post
+	An operationId has to be unique across your schema. Your schema may not work in other tools.
+  warnings.warn(
+/usr/local/lib/python3.9/site-packages/rest_framework/schemas/openapi.py:49: UserWarning: You have a duplicated operationId in your OpenAPI schema: retrieveAutomaticMachineType
+	Route: /api/automatic_machine_type/{id}/, Method: get
+	Route: /api/catering_establishment_automatic_machine/{id}/, Method: get
+	An operationId has to be unique across your schema. Your schema may not work in other tools.
+  warnings.warn(
+/usr/local/lib/python3.9/site-packages/rest_framework/schemas/openapi.py:49: UserWarning: You have a duplicated operationId in your OpenAPI schema: updateAutomaticMachineType
+	Route: /api/automatic_machine_type/{id}/, Method: put
+	Route: /api/catering_establishment_automatic_machine/{id}/, Method: put
+	An operationId has to be unique across your schema. Your schema may not work in other tools.
+  warnings.warn(
+/usr/local/lib/python3.9/site-packages/rest_framework/schemas/openapi.py:49: UserWarning: You have a duplicated operationId in your OpenAPI schema: partialUpdateAutomaticMachineType
+	Route: /api/automatic_machine_type/{id}/, Method: patch
+	Route: /api/catering_establishment_automatic_machine/{id}/, Method: patch
+	An operationId has to be unique across your schema. Your schema may not work in other tools.
+  warnings.warn(
+/usr/local/lib/python3.9/site-packages/rest_framework/schemas/openapi.py:49: UserWarning: You have a duplicated operationId in your OpenAPI schema: destroyAutomaticMachineType
+	Route: /api/automatic_machine_type/{id}/, Method: delete
+	Route: /api/catering_establishment_automatic_machine/{id}/, Method: delete
+	An operationId has to be unique across your schema. Your schema may not work in other tools.
+  warnings.warn(
+openapi: 3.0.2
+info:
+  title: ''
+  version: ''
+paths:
+  /api/appropriate_dishes/:
+    get:
+      operationId: listAppropriateDishes
+      description: ''
+      parameters: []
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/AppropriateDishes'
+          description: ''
+      tags:
+      - api
+    post:
+      operationId: createAppropriateDishes
+      description: ''
+      parameters: []
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/AppropriateDishes'
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/AppropriateDishes'
+          multipart/form-data:
+            schema:
+              $ref: '#/components/schemas/AppropriateDishes'
+      responses:
+        '201':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/AppropriateDishes'
+          description: ''
+      tags:
+      - api
+  /api/catering_establishment/:
+    get:
+      operationId: listCateringEstablishments
+      description: ''
+      parameters: []
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/CateringEstablishment'
+          description: ''
+      tags:
+      - api
+    post:
+      operationId: createCateringEstablishment
+      description: ''
+      parameters: []
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/CateringEstablishment'
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/CateringEstablishment'
+          multipart/form-data:
+            schema:
+              $ref: '#/components/schemas/CateringEstablishment'
+      responses:
+        '201':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/CateringEstablishment'
+          description: ''
+      tags:
+      - api
+  /api/catering_establishment/{id}/:
+    get:
+      operationId: retrieveCateringEstablishment
+      description: ''
+      parameters:
+      - name: id
+        in: path
+        required: true
+        description: A unique integer value identifying this catering establishment.
+        schema:
+          type: string
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/CateringEstablishment'
+          description: ''
+      tags:
+      - api
+    put:
+      operationId: updateCateringEstablishment
+      description: ''
+      parameters:
+      - name: id
+        in: path
+        required: true
+        description: A unique integer value identifying this catering establishment.
+        schema:
+          type: string
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/CateringEstablishment'
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/CateringEstablishment'
+          multipart/form-data:
+            schema:
+              $ref: '#/components/schemas/CateringEstablishment'
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/CateringEstablishment'
+          description: ''
+      tags:
+      - api
+    patch:
+      operationId: partialUpdateCateringEstablishment
+      description: ''
+      parameters:
+      - name: id
+        in: path
+        required: true
+        description: A unique integer value identifying this catering establishment.
+        schema:
+          type: string
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/CateringEstablishment'
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/CateringEstablishment'
+          multipart/form-data:
+            schema:
+              $ref: '#/components/schemas/CateringEstablishment'
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/CateringEstablishment'
+          description: ''
+      tags:
+      - api
+    delete:
+      operationId: destroyCateringEstablishment
+      description: ''
+      parameters:
+      - name: id
+        in: path
+        required: true
+        description: A unique integer value identifying this catering establishment.
+        schema:
+          type: string
+      responses:
+        '204':
+          description: ''
+      tags:
+      - api
+  /api/dish/:
+    get:
+      operationId: listDishs
+      description: ''
+      parameters: []
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Dish'
+          description: ''
+      tags:
+      - api
+    post:
+      operationId: createDish
+      description: ''
+      parameters: []
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Dish'
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/Dish'
+          multipart/form-data:
+            schema:
+              $ref: '#/components/schemas/Dish'
+      responses:
+        '201':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Dish'
+          description: ''
+      tags:
+      - api
+  /api/dish/{id}/:
+    get:
+      operationId: retrieveDish
+      description: ''
+      parameters:
+      - name: id
+        in: path
+        required: true
+        description: A unique integer value identifying this dish.
+        schema:
+          type: string
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Dish'
+          description: ''
+      tags:
+      - api
+    put:
+      operationId: updateDish
+      description: ''
+      parameters:
+      - name: id
+        in: path
+        required: true
+        description: A unique integer value identifying this dish.
+        schema:
+          type: string
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Dish'
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/Dish'
+          multipart/form-data:
+            schema:
+              $ref: '#/components/schemas/Dish'
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Dish'
+          description: ''
+      tags:
+      - api
+    patch:
+      operationId: partialUpdateDish
+      description: ''
+      parameters:
+      - name: id
+        in: path
+        required: true
+        description: A unique integer value identifying this dish.
+        schema:
+          type: string
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Dish'
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/Dish'
+          multipart/form-data:
+            schema:
+              $ref: '#/components/schemas/Dish'
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Dish'
+          description: ''
+      tags:
+      - api
+    delete:
+      operationId: destroyDish
+      description: ''
+      parameters:
+      - name: id
+        in: path
+        required: true
+        description: A unique integer value identifying this dish.
+        schema:
+          type: string
+      responses:
+        '204':
+          description: ''
+      tags:
+      - api
+  /api/ingredient/:
+    get:
+      operationId: listIngredients
+      description: ''
+      parameters: []
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Ingredient'
+          description: ''
+      tags:
+      - api
+    post:
+      operationId: createIngredient
+      description: ''
+      parameters: []
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Ingredient'
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/Ingredient'
+          multipart/form-data:
+            schema:
+              $ref: '#/components/schemas/Ingredient'
+      responses:
+        '201':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Ingredient'
+          description: ''
+      tags:
+      - api
+  /api/ingredient/{id}/:
+    get:
+      operationId: retrieveIngredient
+      description: ''
+      parameters:
+      - name: id
+        in: path
+        required: true
+        description: A unique integer value identifying this ingredient.
+        schema:
+          type: string
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Ingredient'
+          description: ''
+      tags:
+      - api
+    put:
+      operationId: updateIngredient
+      description: ''
+      parameters:
+      - name: id
+        in: path
+        required: true
+        description: A unique integer value identifying this ingredient.
+        schema:
+          type: string
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Ingredient'
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/Ingredient'
+          multipart/form-data:
+            schema:
+              $ref: '#/components/schemas/Ingredient'
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Ingredient'
+          description: ''
+      tags:
+      - api
+    patch:
+      operationId: partialUpdateIngredient
+      description: ''
+      parameters:
+      - name: id
+        in: path
+        required: true
+        description: A unique integer value identifying this ingredient.
+        schema:
+          type: string
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Ingredient'
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/Ingredient'
+          multipart/form-data:
+            schema:
+              $ref: '#/components/schemas/Ingredient'
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Ingredient'
+          description: ''
+      tags:
+      - api
+    delete:
+      operationId: destroyIngredient
+      description: ''
+      parameters:
+      - name: id
+        in: path
+        required: true
+        description: A unique integer value identifying this ingredient.
+        schema:
+          type: string
+      responses:
+        '204':
+          description: ''
+      tags:
+      - api
+  /api/dish_ingredient/:
+    get:
+      operationId: listDishIngredients
+      description: ''
+      parameters: []
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/DishIngredient'
+          description: ''
+      tags:
+      - api
+    post:
+      operationId: createDishIngredient
+      description: ''
+      parameters: []
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/DishIngredient'
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/DishIngredient'
+          multipart/form-data:
+            schema:
+              $ref: '#/components/schemas/DishIngredient'
+      responses:
+        '201':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/DishIngredient'
+          description: ''
+      tags:
+      - api
+  /api/dish_ingredient/{id}/:
+    get:
+      operationId: retrieveDishIngredient
+      description: ''
+      parameters:
+      - name: id
+        in: path
+        required: true
+        description: A unique integer value identifying this dish ingredient.
+        schema:
+          type: string
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/DishIngredient'
+          description: ''
+      tags:
+      - api
+    put:
+      operationId: updateDishIngredient
+      description: ''
+      parameters:
+      - name: id
+        in: path
+        required: true
+        description: A unique integer value identifying this dish ingredient.
+        schema:
+          type: string
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/DishIngredient'
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/DishIngredient'
+          multipart/form-data:
+            schema:
+              $ref: '#/components/schemas/DishIngredient'
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/DishIngredient'
+          description: ''
+      tags:
+      - api
+    patch:
+      operationId: partialUpdateDishIngredient
+      description: ''
+      parameters:
+      - name: id
+        in: path
+        required: true
+        description: A unique integer value identifying this dish ingredient.
+        schema:
+          type: string
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/DishIngredient'
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/DishIngredient'
+          multipart/form-data:
+            schema:
+              $ref: '#/components/schemas/DishIngredient'
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/DishIngredient'
+          description: ''
+      tags:
+      - api
+    delete:
+      operationId: destroyDishIngredient
+      description: ''
+      parameters:
+      - name: id
+        in: path
+        required: true
+        description: A unique integer value identifying this dish ingredient.
+        schema:
+          type: string
+      responses:
+        '204':
+          description: ''
+      tags:
+      - api
+  /api/automatic_machine_type/:
+    get:
+      operationId: listAutomaticMachineTypes
+      description: ''
+      parameters: []
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/AutomaticMachineType'
+          description: ''
+      tags:
+      - api
+    post:
+      operationId: createAutomaticMachineType
+      description: ''
+      parameters: []
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/AutomaticMachineType'
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/AutomaticMachineType'
+          multipart/form-data:
+            schema:
+              $ref: '#/components/schemas/AutomaticMachineType'
+      responses:
+        '201':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/AutomaticMachineType'
+          description: ''
+      tags:
+      - api
+  /api/automatic_machine_type/{id}/:
+    get:
+      operationId: retrieveAutomaticMachineType
+      description: ''
+      parameters:
+      - name: id
+        in: path
+        required: true
+        description: A unique integer value identifying this automatic machine type.
+        schema:
+          type: string
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/AutomaticMachineType'
+          description: ''
+      tags:
+      - api
+    put:
+      operationId: updateAutomaticMachineType
+      description: ''
+      parameters:
+      - name: id
+        in: path
+        required: true
+        description: A unique integer value identifying this automatic machine type.
+        schema:
+          type: string
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/AutomaticMachineType'
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/AutomaticMachineType'
+          multipart/form-data:
+            schema:
+              $ref: '#/components/schemas/AutomaticMachineType'
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/AutomaticMachineType'
+          description: ''
+      tags:
+      - api
+    patch:
+      operationId: partialUpdateAutomaticMachineType
+      description: ''
+      parameters:
+      - name: id
+        in: path
+        required: true
+        description: A unique integer value identifying this automatic machine type.
+        schema:
+          type: string
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/AutomaticMachineType'
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/AutomaticMachineType'
+          multipart/form-data:
+            schema:
+              $ref: '#/components/schemas/AutomaticMachineType'
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/AutomaticMachineType'
+          description: ''
+      tags:
+      - api
+    delete:
+      operationId: destroyAutomaticMachineType
+      description: ''
+      parameters:
+      - name: id
+        in: path
+        required: true
+        description: A unique integer value identifying this automatic machine type.
+        schema:
+          type: string
+      responses:
+        '204':
+          description: ''
+      tags:
+      - api
+  /api/catering_establishment_automatic_machine/:
+    get:
+      operationId: listAutomaticMachineTypes
+      description: ''
+      parameters: []
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/AutomaticMachineType'
+          description: ''
+      tags:
+      - api
+    post:
+      operationId: createAutomaticMachineType
+      description: ''
+      parameters: []
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/AutomaticMachineType'
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/AutomaticMachineType'
+          multipart/form-data:
+            schema:
+              $ref: '#/components/schemas/AutomaticMachineType'
+      responses:
+        '201':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/AutomaticMachineType'
+          description: ''
+      tags:
+      - api
+  /api/catering_establishment_automatic_machine/{id}/:
+    get:
+      operationId: retrieveAutomaticMachineType
+      description: ''
+      parameters:
+      - name: id
+        in: path
+        required: true
+        description: A unique integer value identifying this automatic machine type.
+        schema:
+          type: string
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/AutomaticMachineType'
+          description: ''
+      tags:
+      - api
+    put:
+      operationId: updateAutomaticMachineType
+      description: ''
+      parameters:
+      - name: id
+        in: path
+        required: true
+        description: A unique integer value identifying this automatic machine type.
+        schema:
+          type: string
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/AutomaticMachineType'
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/AutomaticMachineType'
+          multipart/form-data:
+            schema:
+              $ref: '#/components/schemas/AutomaticMachineType'
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/AutomaticMachineType'
+          description: ''
+      tags:
+      - api
+    patch:
+      operationId: partialUpdateAutomaticMachineType
+      description: ''
+      parameters:
+      - name: id
+        in: path
+        required: true
+        description: A unique integer value identifying this automatic machine type.
+        schema:
+          type: string
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/AutomaticMachineType'
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/AutomaticMachineType'
+          multipart/form-data:
+            schema:
+              $ref: '#/components/schemas/AutomaticMachineType'
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/AutomaticMachineType'
+          description: ''
+      tags:
+      - api
+    delete:
+      operationId: destroyAutomaticMachineType
+      description: ''
+      parameters:
+      - name: id
+        in: path
+        required: true
+        description: A unique integer value identifying this automatic machine type.
+        schema:
+          type: string
+      responses:
+        '204':
+          description: ''
+      tags:
+      - api
+  /api/automatic_machine_dish/:
+    get:
+      operationId: listAutomaticMachineDishs
+      description: ''
+      parameters: []
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/AutomaticMachineDish'
+          description: ''
+      tags:
+      - api
+    post:
+      operationId: createAutomaticMachineDish
+      description: ''
+      parameters: []
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/AutomaticMachineDish'
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/AutomaticMachineDish'
+          multipart/form-data:
+            schema:
+              $ref: '#/components/schemas/AutomaticMachineDish'
+      responses:
+        '201':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/AutomaticMachineDish'
+          description: ''
+      tags:
+      - api
+  /api/automatic_machine_dish/{id}/:
+    get:
+      operationId: retrieveAutomaticMachineDish
+      description: ''
+      parameters:
+      - name: id
+        in: path
+        required: true
+        description: A unique integer value identifying this automatic machine dish.
+        schema:
+          type: string
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/AutomaticMachineDish'
+          description: ''
+      tags:
+      - api
+    put:
+      operationId: updateAutomaticMachineDish
+      description: ''
+      parameters:
+      - name: id
+        in: path
+        required: true
+        description: A unique integer value identifying this automatic machine dish.
+        schema:
+          type: string
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/AutomaticMachineDish'
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/AutomaticMachineDish'
+          multipart/form-data:
+            schema:
+              $ref: '#/components/schemas/AutomaticMachineDish'
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/AutomaticMachineDish'
+          description: ''
+      tags:
+      - api
+    patch:
+      operationId: partialUpdateAutomaticMachineDish
+      description: ''
+      parameters:
+      - name: id
+        in: path
+        required: true
+        description: A unique integer value identifying this automatic machine dish.
+        schema:
+          type: string
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/AutomaticMachineDish'
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/AutomaticMachineDish'
+          multipart/form-data:
+            schema:
+              $ref: '#/components/schemas/AutomaticMachineDish'
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/AutomaticMachineDish'
+          description: ''
+      tags:
+      - api
+    delete:
+      operationId: destroyAutomaticMachineDish
+      description: ''
+      parameters:
+      - name: id
+        in: path
+        required: true
+        description: A unique integer value identifying this automatic machine dish.
+        schema:
+          type: string
+      responses:
+        '204':
+          description: ''
+      tags:
+      - api
+  /api/user/:
+    get:
+      operationId: listUsers
+      description: ''
+      parameters: []
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/User'
+          description: ''
+      tags:
+      - api
+    post:
+      operationId: createUser
+      description: ''
+      parameters: []
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/User'
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/User'
+          multipart/form-data:
+            schema:
+              $ref: '#/components/schemas/User'
+      responses:
+        '201':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/User'
+          description: ''
+      tags:
+      - api
+  /api/user/{id}/:
+    get:
+      operationId: retrieveUser
+      description: ''
+      parameters:
+      - name: id
+        in: path
+        required: true
+        description: A unique integer value identifying this user.
+        schema:
+          type: string
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/User'
+          description: ''
+      tags:
+      - api
+    put:
+      operationId: updateUser
+      description: ''
+      parameters:
+      - name: id
+        in: path
+        required: true
+        description: A unique integer value identifying this user.
+        schema:
+          type: string
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/User'
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/User'
+          multipart/form-data:
+            schema:
+              $ref: '#/components/schemas/User'
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/User'
+          description: ''
+      tags:
+      - api
+    patch:
+      operationId: partialUpdateUser
+      description: ''
+      parameters:
+      - name: id
+        in: path
+        required: true
+        description: A unique integer value identifying this user.
+        schema:
+          type: string
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/User'
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/User'
+          multipart/form-data:
+            schema:
+              $ref: '#/components/schemas/User'
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/User'
+          description: ''
+      tags:
+      - api
+    delete:
+      operationId: destroyUser
+      description: ''
+      parameters:
+      - name: id
+        in: path
+        required: true
+        description: A unique integer value identifying this user.
+        schema:
+          type: string
+      responses:
+        '204':
+          description: ''
+      tags:
+      - api
+  /api/dish_report/:
+    get:
+      operationId: listDishReports
+      description: ''
+      parameters: []
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/DishReport'
+          description: ''
+      tags:
+      - api
+    post:
+      operationId: createDishReport
+      description: ''
+      parameters: []
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/DishReport'
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/DishReport'
+          multipart/form-data:
+            schema:
+              $ref: '#/components/schemas/DishReport'
+      responses:
+        '201':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/DishReport'
+          description: ''
+      tags:
+      - api
+  /api/dish_report/{id}/:
+    get:
+      operationId: retrieveDishReport
+      description: ''
+      parameters:
+      - name: id
+        in: path
+        required: true
+        description: A unique integer value identifying this dish report.
+        schema:
+          type: string
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/DishReport'
+          description: ''
+      tags:
+      - api
+    put:
+      operationId: updateDishReport
+      description: ''
+      parameters:
+      - name: id
+        in: path
+        required: true
+        description: A unique integer value identifying this dish report.
+        schema:
+          type: string
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/DishReport'
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/DishReport'
+          multipart/form-data:
+            schema:
+              $ref: '#/components/schemas/DishReport'
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/DishReport'
+          description: ''
+      tags:
+      - api
+    patch:
+      operationId: partialUpdateDishReport
+      description: ''
+      parameters:
+      - name: id
+        in: path
+        required: true
+        description: A unique integer value identifying this dish report.
+        schema:
+          type: string
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/DishReport'
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/DishReport'
+          multipart/form-data:
+            schema:
+              $ref: '#/components/schemas/DishReport'
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/DishReport'
+          description: ''
+      tags:
+      - api
+    delete:
+      operationId: destroyDishReport
+      description: ''
+      parameters:
+      - name: id
+        in: path
+        required: true
+        description: A unique integer value identifying this dish report.
+        schema:
+          type: string
+      responses:
+        '204':
+          description: ''
+      tags:
+      - api
+  /api/ordered_dish_ingredient/:
+    get:
+      operationId: listOrderedDishIngredients
+      description: ''
+      parameters: []
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/OrderedDishIngredient'
+          description: ''
+      tags:
+      - api
+    post:
+      operationId: createOrderedDishIngredient
+      description: ''
+      parameters: []
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/OrderedDishIngredient'
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/OrderedDishIngredient'
+          multipart/form-data:
+            schema:
+              $ref: '#/components/schemas/OrderedDishIngredient'
+      responses:
+        '201':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/OrderedDishIngredient'
+          description: ''
+      tags:
+      - api
+  /api/ordered_dish_ingredient/{id}/:
+    get:
+      operationId: retrieveOrderedDishIngredient
+      description: ''
+      parameters:
+      - name: id
+        in: path
+        required: true
+        description: A unique integer value identifying this ordered dish ingredient.
+        schema:
+          type: string
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/OrderedDishIngredient'
+          description: ''
+      tags:
+      - api
+    put:
+      operationId: updateOrderedDishIngredient
+      description: ''
+      parameters:
+      - name: id
+        in: path
+        required: true
+        description: A unique integer value identifying this ordered dish ingredient.
+        schema:
+          type: string
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/OrderedDishIngredient'
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/OrderedDishIngredient'
+          multipart/form-data:
+            schema:
+              $ref: '#/components/schemas/OrderedDishIngredient'
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/OrderedDishIngredient'
+          description: ''
+      tags:
+      - api
+    patch:
+      operationId: partialUpdateOrderedDishIngredient
+      description: ''
+      parameters:
+      - name: id
+        in: path
+        required: true
+        description: A unique integer value identifying this ordered dish ingredient.
+        schema:
+          type: string
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/OrderedDishIngredient'
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/OrderedDishIngredient'
+          multipart/form-data:
+            schema:
+              $ref: '#/components/schemas/OrderedDishIngredient'
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/OrderedDishIngredient'
+          description: ''
+      tags:
+      - api
+    delete:
+      operationId: destroyOrderedDishIngredient
+      description: ''
+      parameters:
+      - name: id
+        in: path
+        required: true
+        description: A unique integer value identifying this ordered dish ingredient.
+        schema:
+          type: string
+      responses:
+        '204':
+          description: ''
+      tags:
+      - api
+components:
+  schemas:
+    AppropriateDishes:
+      type: object
+      properties: {}
+    CateringEstablishment:
+      type: object
+      properties:
+        id:
+          type: integer
+          readOnly: true
+        establishment_code:
+          type: string
+          format: uuid
+        image:
+          type: string
+          format: binary
+      required:
+      - establishment_code
+    Dish:
+      type: object
+      properties:
+        id:
+          type: integer
+          readOnly: true
+        name:
+          type: string
+          maxLength: 20
+        image:
+          type: string
+          format: binary
+        description:
+          type: string
+        type:
+          type: string
+          maxLength: 20
+        popularity:
+          type: string
+          maxLength: 20
+        rate:
+          type: integer
+          maximum: 2147483647
+          minimum: -2147483648
+      required:
+      - name
+      - description
+      - type
+      - rate
+    Ingredient:
+      type: object
+      properties:
+        id:
+          type: integer
+          readOnly: true
+        name:
+          type: string
+          maxLength: 20
+        price:
+          type: number
+      required:
+      - name
+      - price
+    DishIngredient:
+      type: object
+      properties:
+        id:
+          type: integer
+          readOnly: true
+        status:
+          type: boolean
+        ingredient:
+          type: integer
+        dish:
+          type: integer
+      required:
+      - status
+      - ingredient
+      - dish
+    AutomaticMachineType:
+      type: object
+      properties:
+        id:
+          type: integer
+          readOnly: true
+    AutomaticMachineDish:
+      type: object
+      properties:
+        id:
+          type: integer
+          readOnly: true
+        automatic_machine_type:
+          type: integer
+        dish:
+          type: integer
+      required:
+      - automatic_machine_type
+      - dish
+    User:
+      type: object
+      properties:
+        id:
+          type: integer
+          readOnly: true
+        password:
+          type: string
+          maxLength: 128
+        last_login:
+          type: string
+          format: date-time
+          nullable: true
+        is_superuser:
+          type: boolean
+          description: Designates that this user has all permissions without explicitly
+            assigning them.
+        username:
+          type: string
+          description: Required. 150 characters or fewer. Letters, digits and @/./+/-/_
+            only.
+          pattern: ^[\w.@+-]+\z
+          maxLength: 150
+        first_name:
+          type: string
+          maxLength: 150
+        last_name:
+          type: string
+          maxLength: 150
+        email:
+          type: string
+          format: email
+          maxLength: 254
+        is_staff:
+          type: boolean
+          description: Designates whether the user can log into this admin site.
+        is_active:
+          type: boolean
+          description: Designates whether this user should be treated as active. Unselect
+            this instead of deleting accounts.
+        date_joined:
+          type: string
+          format: date-time
+        status:
+          type: string
+          maxLength: 20
+        groups:
+          type: array
+          items:
+            type: integer
+          description: The groups this user belongs to. A user will get all permissions
+            granted to each of their groups.
+        user_permissions:
+          type: array
+          items:
+            type: integer
+          description: Specific permissions for this user.
+      required:
+      - password
+      - username
+      - status
+    DishReport:
+      type: object
+      properties:
+        id:
+          type: integer
+          readOnly: true
+        text:
+          type: string
+        publication_date:
+          type: string
+          format: date
+        user:
+          type: string
+        dish:
+          type: integer
+      required:
+      - text
+      - publication_date
+      - user
+      - dish
+    OrderedDishIngredient:
+      type: object
+      properties:
+        id:
+          type: integer
+          readOnly: true
+        weight_or_volume:
+          type: number
+        order_date:
+          type: string
+          format: date
+        order_time:
+          type: string
+        ingredient:
+          type: integer
+        user:
+          type: string
+      required:
+      - weight_or_volume
+      - order_date
+      - order_time
+      - ingredient
+      - user

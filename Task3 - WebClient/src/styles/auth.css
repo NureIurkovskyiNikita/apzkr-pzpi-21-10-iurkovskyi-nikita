@@ -1,0 +1,44 @@
+.auth_container {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    /*border: solid 1px black;*/
+    min-width: 35%;
+    min-height: 20%;
+    padding: 10px 20px;
+    border-radius: 15px;
+}
+
+#title_text {
+    font-size: 25px;
+}
+
+.form_label {
+    margin-top: 5px;
+    display: block;
+    text-align: left;
+}
+
+.form-error-message {
+    color: crimson;
+    font-size: 12px;
+    margin-bottom: 12px;
+}
+
+.form-tip-message {
+    font-size: 12px;
+    color: goldenrod;
+    display: block;
+    text-align: left;
+    margin-bottom: 5px;
+}
+
+.relatively-positioned-helper {
+    display: block;
+    position: relative;
+    height: 100%;
+    left: 0;
+    top: 0;
+}
